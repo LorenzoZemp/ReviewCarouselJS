@@ -8,6 +8,12 @@
     <title>Reviews</title>
     <!-- Style Links -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- JS links -->
     <script src="./app.js" defer></script>
     <script
@@ -23,8 +29,14 @@
     </div>
     <!-- Review Card -->
     <div id="card">
-      <img src="./Assets/images/peter.jpg" alt="" id="prof-pic" />
-      <i class="fa-solid fa-quote-left" id="quotes"></i>
+      <div id="pic-quote">
+        <img src="./Assets/images/peter.jpg" alt="" id="prof-pic" />
+        <div id="quotes">
+          <div id="quote-bg">
+            <i class="fa-solid fa-quote-left" id="quote-icon"></i>
+          </div>
+        </div>
+      </div>
       <h5 id="prof-name">Pea Tear Gryphon</h5>
       <h6 id="prof-job">Professional</h6>
       <p id="review">
@@ -36,8 +48,8 @@
         dolor Lorem tempor magna.
       </p>
       <div id="btns">
-        <i class="fa-solid fa-chevron-left" id="btn-prev"></i>
-        <i class="fa-solid fa-chevron-right" id="btn-next"></i>
+        <i class="fa-solid fa-chevron-left arrows" id="btn-prev"></i>
+        <i class="fa-solid fa-chevron-right arrows" id="btn-next"></i>
       </div>
       <button id="suprise-me">Suprise Me</button>
     </div>

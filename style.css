@@ -1,7 +1,151 @@
 *,
 ::after,
 ::before {
+  /* Reset to use Box Model properly */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Apply font to all elements except i tags */
+/* since i tages are yused for fontawesome icons */
+*:not(i) {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --brand-color: rgb(57, 222, 222);
+  --background-color: rgb(236, 236, 236);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+/* Title and Underline */
+#underline {
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  width: 80px;
+  height: 5px;
+  background-color: var(--brand-color);
+}
+
+#title {
+  margin-bottom: 2.5rem;
+}
+
+/* Review Card */
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 650px;
+  padding: 10px 50px 10px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: white;
+}
+
+/* Profile Picture and Quote Icon */
+#pic-quote {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+#prof-pic {
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 6px -5px 0px var(--brand-color);
+}
+
+#quotes {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#quote-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 2.4rem;
+  top: 16%;
+  left: 18%;
+  color: white;
+}
+
+#quote-bg {
+  position: relative;
+  background-color: var(--brand-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+/* Name and SubTitle */
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--brand-color);
+}
+
+/* Review Paragraph */
+p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Previous and Next Arrows */
+#btns {
+  display: flex;
+  gap: 50px;
+  margin: 10px 0;
+}
+
+.arrows {
+  font-size: 2rem;
+  color: var(--brand-color);
+}
+
+.arrows:hover {
+  cursor: pointer;
+}
+
+.arrows:active {
+  color: rgb(57, 200, 200);
+}
+
+/* Suprise Me Button */
+#suprise-me {
+  width: 100px;
+  height: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  background-color: var(--brand-color);
+  color: white;
+  border-radius: 6px;
+}
+
+#suprise-me:hover {
+  cursor: pointer;
+}
+
+#suprise-me:active {
+  background-color: rgb(57, 200, 200);
 }
